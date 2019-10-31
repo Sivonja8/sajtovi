@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MinecrafTEX</title>
+    <link>https://minecraftex.info/</link>
+    <description>Recent content on MinecrafTEX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-jp</language>
+    <copyright>© minecraftex 2019</copyright>
+    <lastBuildDate>Sun, 14 Jul 2019 05:53:08 +0900</lastBuildDate>
+    
+	<atom:link href="https://minecraftex.info/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[初心者向け] MinecraftForge1.14のMOD開発環境を作る（ Eclipse &#43; GrepConsole ）</title>
+      <link>https://minecraftex.info/modding-tutorial/setup/minecraft-forge-development-eclipse-grep-console/</link>
+      <pubDate>Sun, 14 Jul 2019 05:53:08 +0900</pubDate>
+      
+      <guid>https://minecraftex.info/modding-tutorial/setup/minecraft-forge-development-eclipse-grep-console/</guid>
+      <description>基本的なEclipseの開発環境に加えてGrepConsoleを使った、ちょっとだけ便利な開発環境を構築する手順を解説します。
+Mac環境での解説ですが、Windowsでもほぼ同じ手順です。
+構築手順  Eclipseのダウンロード
+ ForgeMDKのダウンロード
+ Eclipseの起動＆プロジェクトのインポート
+ Eclipse開発用の初期処理を行う
+ マインクラフトを起動
+ GrepConsoleのインストール
+ GrepConsoleビューを表示する
+ 再度、マインクラフトを起動
+ まとめ
+    Eclipseのダウンロード Eclipse公式サイトより Eclipse4.8.0 をダウンロード・インストールします。
+Java Full Edition を選択します。
+お使いのOSに合ったものを選択してください。
+     ForgeMDKのダウンロード こちらもMinecraftForge公式サイトからMDKをダウンロードし、ZIPファイルを解凍しておきます。
+フォルダを以下のように配置しましょう。
+ forge (Eclipseワークスペースに指定)
+└  forge-1.14.3-27.0.50-mdk
+├  build.gradle
+├ &amp;hellip; その他いろんなファイル
+    Eclipseの起動＆プロジェクトのインポート Eclipseを起動し、forgeフォルダをワークスペースとして指定します。
+今後、MOD開発はこのフォルダ内で行うことになるので、わかりやすい場所を選びましょう。
+  続いて、メニューの 「ファイル」 -&amp;gt; 「インポート」 を選択します。
+  インポートウィザードから「Gradle」 -&amp;gt; 「既存のGradleプロジェクト」を選択します。</description>
+    </item>
+    
+    <item>
+      <title>[Mac]MinecraftForge1.14.3のIntelliJ IDEA開発環境を構築する</title>
+      <link>https://minecraftex.info/modding-tutorial/setup/minecraft-forge-1.14.3-development-intellij-idea-mac/</link>
+      <pubDate>Thu, 11 Jul 2019 01:23:04 +0900</pubDate>
+      
+      <guid>https://minecraftex.info/modding-tutorial/setup/minecraft-forge-1.14.3-development-intellij-idea-mac/</guid>
+      <description>IntelliJ IDEA のダウンロード＆インストール 公式サイトからダウンロードしインストールしておきます。
+Forge MDKのダウンロード MinecraftForgeの最新版（現段階では 1.14.3）のMDKをダウンロードし、任意の場所に展開しておきます。
+ https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.14.3.html
+    起動＆プロジェクトの読み込み   IntelliJ IDEAが起動したら、まずはforgeプロジェクトをインポートします。
+IntelliJ IDEAはGradleに対応していますので、
+mdkに含まれる build.gradle を選択するだけです。
+読み込み時の設定は基本的にそのままで良いです。
+    プロジェクト読み込み直後の画面。
+  初期処理 画面右側のGradleビューを開き、 genIntellijRuns をダブルクリックします。
+ソースのデコンパイルやなんやかんやを自動でやってくれます。
+しばらく時間がかかるのでじっくりお待ちください。
+  マイクラ起動 Gradleビューの runClient を実行すると、
+Forgeが導入された状態でマイクラが起動します。
+  所要時間わずか5分足らず。かなりお手軽です。
+マイクラ開発用プラグイン 今回は使用しませんでしたが、
+IntelliJ IDEA ではMod開発のための専用プラグインが用意されています。
+最新バージョンの対応も早そうです。
+ https://minecraftdev.org/
+    まとめ 細かい設定も必要なく、ほとんどマウス操作だけで開発環境が構築できました。
+もっさりしたEclipseと比べるとたしかに動作が軽快でストレスも感じませんし、UIがスタイリッシュでカッコいいです。
+しかし、長い歴史のあるEclipseに比べると情報が少なめ。
+Eclipseに慣れた人だと、細かいカスタマイズが出来ずにちょっと物足りないかもしれません。
+これからMod開発を始める人、Kotlin派の人は一度お試しあれ。</description>
+    </item>
+    
+    <item>
+      <title>[Windows]MinecraftForge1.14.3のEclipse開発環境を構築する</title>
+      <link>https://minecraftex.info/modding-tutorial/setup/minecraft-forge-1.14.3-development-eclipse-windows/</link>
+      <pubDate>Thu, 11 Jul 2019 00:57:15 +0900</pubDate>
+      
+      <guid>https://minecraftex.info/modding-tutorial/setup/minecraft-forge-1.14.3-development-eclipse-windows/</guid>
+      <description>WindowsでのEclipse（Forge1.14.3）の開発環境の構築手順を紹介します。
+Eclipseのダウンロード 公式サイトより2019年3月時点の最新版。
+JavaのFullEdition(JREが含まれる)をダウンロードします。
+サイズが大きいのでじっくり待ちましょう。
+    Gradleビルド用のJDK1.8をインストール マイクラのビルドには対応したバージョンのJava（Java8〜Java11.0.0）が必要で、Eclipseに含まれるJREではビルド出来ません。
+ビルド用にJDK1.8をインストールします。
+公式サイトからダウンロード＆インストール。
+※ページ中段あたりにダウンロードリンクあり
+https://www.oracle.com/technetwork/jp/java/javase/downloads/java-archive-javase8-2177648.html
+  環境変数JAVA_HOMEに設定し、
+java -version  でjava1.8が使えることを確認しましょう。
+環境変数の設定方法は下記のサイトで紹介されていますのでそちらを参考に。
+ ちゃんとできてる？Javaの環境変数の設定方法
+https://eng-entrance.com/java-install-env
+   ワークスペース用のフォルダを作成 今回の手順では、Cドライブ直下に workspace フォルダを作成し、
+さらにその中にForge用のフォルダを作成しました。
+C:\\workspace\forge  このフォルダをEclipseでワークスペースに指定することになります。
+1.14.3 用の forge MDKをダウンロード 公式サイトから最新バージョンをダウンロード
+https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.14.3.html
+※記事作成時の最新は 1.14.3-27.0.2
+  ダウンロードしてきたzipファイルを解凍（展開）し、forgeフォルダに配置します。
+  コマンドプロンプトからコマンド実行 MDKの場所まで移動します。
+Copy&amp;nbsp; cd C:\workspace\forge\forge-1.14.3-27.0.2-mdk   次に２つのコマンドを続けて実行します。
+けっこう時間がかかるので気長に待ちましょう。
+Copy&amp;nbsp; gradlew genEclipseRuns   Copy&amp;nbsp; gradlew eclipse   他サイトのサンプルでは gradlew eclipse は実行しなくても良いと紹介されていましたが、これを実行しないとEclipseでうまく読み込めませんでした。</description>
+    </item>
+    
+    <item>
+      <title>クラフトレシピの追加</title>
+      <link>https://minecraftex.info/modding-tutorial/beginner/add-craft-reciepe/</link>
+      <pubDate>Tue, 09 Jul 2019 13:36:43 +0900</pubDate>
+      
+      <guid>https://minecraftex.info/modding-tutorial/beginner/add-craft-reciepe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>燃料の追加</title>
+      <link>https://minecraftex.info/modding-tutorial/beginner/add-fuel/</link>
+      <pubDate>Tue, 09 Jul 2019 13:36:33 +0900</pubDate>
+      
+      <guid>https://minecraftex.info/modding-tutorial/beginner/add-fuel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>シンプルなアイテムの追加。</title>
+      <link>https://minecraftex.info/modding-tutorial/beginner/add-simple-item/</link>
+      <pubDate>Tue, 09 Jul 2019 13:36:25 +0900</pubDate>
+      
+      <guid>https://minecraftex.info/modding-tutorial/beginner/add-simple-item/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Java初心者向け]シンプルなブロックの追加</title>
+      <link>https://minecraftex.info/modding-tutorial/beginner/e000-add-simple-block/</link>
+      <pubDate>Tue, 09 Jul 2019 00:56:44 +0900</pubDate>
+      
+      <guid>https://minecraftex.info/modding-tutorial/beginner/e000-add-simple-block/</guid>
+      <description>無機能のシンプルなブロックの追加 ブロックの追加 を解説します。
+他のチュートリアルに通じる基本の部分ですので、初心者向けに丁寧に解説していきます。MOD開発の基礎になるのでファイル構成などしっかり理解しておくと良いでしょう。
+ファイル構成   src
+└  main
+└  java
+│└  info.minecraftex.tutorialmod
+│　└  e000_simple_block
+│　│└  E000SimpleBlock.java
+│　│└  E000Setup.java
+│　└  ModBlocks.java
+│　└  ModItemGroup.java
+│　└  TutorialMod.java
+└  resources
+└  assets.tutorialmod
+│└  blockstates
+││└  e000_simple_block.json
+│└  lang
+││└  en_US.json
+││└  ja_JP.json
+│└  models
+││└  block
+│││└  e000_simple_block.</description>
+    </item>
+    
+    <item>
+      <title>好きなモブのスポーンブロックを作る(Ver1.13)</title>
+      <link>https://minecraftex.info/command-room/minecraft-make-custom-spawner/</link>
+      <pubDate>Sat, 05 Jan 2019 14:15:52 +0000</pubDate>
+      
+      <guid>https://minecraftex.info/command-room/minecraft-make-custom-spawner/</guid>
+      <description>サバイバルでは出現しないスポーンブロックも作れる 例）羊のスポーンブロック Copy&amp;nbsp; /setblock ~ ~ ~ minecraft:spawner{SpawnData:{id:&amp;quot;minecraft:sheep&amp;quot;}} replace   例）ムーシュルームのスポーンブロック Copy&amp;nbsp; /setblock ~ ~ ~ minecraft:spawner{SpawnData:{id:&amp;quot;minecraft:mooshroom&amp;quot;}} replace   指定した位置にスポーンブロックを設置することができます。
+アイテムとしてスポーンブロックを手に入れる 上記のコマンドは 指定した位置にブロックを設置する方法 なので、アイテム化はできません。
+アイテムとしてスポーンブロックが欲しい場合は以下のコマンドを実行します。
+Copy&amp;nbsp; /give @p minecraft:spawner{
+display:{ Name : &amp;quot;\&amp;quot;羊 スポナー\&amp;quot;&amp;quot; },
+BlockEntityTag:{
+SpawnData:{ id : &amp;quot;minecraft:sheep&amp;quot; },
+SpawnPotentials : [] }
+} 1
+   少し長いコマンドになりますが、変更する点は2箇所だけです。
+minecraft:sheep の部分でスポーンさせるモブを指定しています。
+指定しなかった場合は、ブタのスポナーになります。
+  公式Wikiを参考に好きなモブに変更してください。
+ Java Editionのデータ値/エンティティID - Minecraft Wiki
+  わかりやすい名前をつけておこう スポナーのアイテムアイコンは全て同じなので、アイテムに名前をつけておかないと区別がつかなくなります。</description>
+    </item>
+    
+    <item>
+      <title>【コマンド】モブ・モンスター（Entity）を消す方法</title>
+      <link>https://minecraftex.info/command-room/minecraft-mob-not-spawn/</link>
+      <pubDate>Wed, 02 Jan 2019 10:08:02 +0000</pubDate>
+      
+      <guid>https://minecraftex.info/command-room/minecraft-mob-not-spawn/</guid>
+      <description>モンスターやモブを全て消すコマンド モブのスポーン禁止 まず、牛や豚や鶏、そして全てのモンスターがスポーンしないようにします。
+Copy&amp;nbsp; /gamerule doMobSpawning false   モブの削除（kill） 次に、すでにスポーンしているモブを消去します。
+Copy&amp;nbsp; /kill @e[type=!minecraft:player]   「!」をつけるのがポイントです。
+type=minecraft:player で 「プレイヤーだけ」という意味になり、
+type=!minecraft:player で「プレイヤー以外」という意味になります。
+スライムは分裂するので注意 スライムはkillしても分裂するので、2-3回おなじコマンドを実行してください。
+読み込み範囲外に移動するとモブが残っているので、同じコマンドで消去してください。</description>
+    </item>
+    
+    <item>
+      <title>【コマンド】超巨大スライムの作り方</title>
+      <link>https://minecraftex.info/command-room/minecraft-king-slime/</link>
+      <pubDate>Tue, 01 Jan 2019 13:51:46 +0000</pubDate>
+      
+      <guid>https://minecraftex.info/command-room/minecraft-king-slime/</guid>
+      <description>超・超巨大スライムの作り方 コマンドを使えば自然にスポーンするスライムよりはるかに大きなスライムを作ることができます。
+Copy&amp;nbsp; /summon minecraft:slime ~ ~ ~ {Size:60}   Sizeの数字を大きくすればするほど大きなスライムを召喚できます。
+わたしは120まで確認しましたが、まだまだ大きくできそうです。
+分裂してもまだまだ大きい 分裂すると、半分くらいの大きさのスライムに分裂するようです。
+パソコンの負荷に注意 大きくすればするほど、パソコンに負荷がかかるようで120を超えたあたりから画面がカクついてきました。</description>
+    </item>
+    
+    <item>
+      <title>【コマンド】チキンジョッキーの作り方</title>
+      <link>https://minecraftex.info/command-room/summon-chicken-jocky/</link>
+      <pubDate>Sat, 29 Dec 2018 10:01:08 +0000</pubDate>
+      
+      <guid>https://minecraftex.info/command-room/summon-chicken-jocky/</guid>
+      <description> チキンジョッキーの作るコマンド(Ver1.13) Copy&amp;nbsp; /summon minecraft:chicken ~ ~ ~ {Passengers:[{id:&amp;quot;minecraft:zombie&amp;quot;,IsBaby:1}]}   IsBabyを指定すると、子供ゾンビになります。
+自然にスポーンする、子供ゾンビ＋チキンの組み合わせ以外も自由に作ることができます。
+例えば
+コウモリの上に村人 Copy&amp;nbsp; /summon minecraft:bat ~ ~ ~ {Passengers:[{id:&amp;quot;minecraft:villager&amp;quot;}]}   豚の上に牛 Copy&amp;nbsp; /summon minecraft:pig ~ ~ ~ {Passengers:[{id:&amp;quot;minecraft:cow&amp;quot;}]}   </description>
+    </item>
+    
+    <item>
+      <title>【コマンド】summonで動かないMobを作る方法(その２)</title>
+      <link>https://minecraftex.info/command-room/summon-no-move-entity/</link>
+      <pubDate>Sat, 29 Dec 2018 05:48:52 +0000</pubDate>
+      
+      <guid>https://minecraftex.info/command-room/summon-no-move-entity/</guid>
+      <description>動かないモブを作るコマンド(その２) Copy&amp;nbsp; /summon minecraft:creeper ~ ~ ~ {Attributes:[{Name:generic.movementSpeed,Base:0}]}   その１で紹介した方法と違って、近寄れば攻撃してきますし、
+足元のブロックを壊せばちゃんと落下します。
+移動速度がゼロになっているだけなので、
+体の向きを変えたり、頭を回したりします。
+インテリアとして配置するならこちらのほうが良いかもしれませんね。</description>
+    </item>
+    
+    <item>
+      <title>【コマンド】エンダーマンに色んなブロックを持たせるコマンド(Ver1.13)</title>
+      <link>https://minecraftex.info/command-room/enderman-any-block/</link>
+      <pubDate>Sat, 29 Dec 2018 05:48:39 +0000</pubDate>
+      
+      <guid>https://minecraftex.info/command-room/enderman-any-block/</guid>
+      <description>エンダーマンに指定のブロックを持たせるコマンド(Ver1.13) Copy&amp;nbsp; /summon minecraft:enderman ~ ~ ~ {carriedBlockState:{Name:&amp;quot;minecraft:piston&amp;quot;}}   Ver1.13からコマンドが変更になっています。
+minecraft:piston を好きなブロックに変えてください。
+通常では出来ないブロックも持たせられる   NoAIと組み合わせて、配布ワールドのアイテム設置台としても面白いかもしれませんね。</description>
+    </item>
+    
+    <item>
+      <title>【コマンド】summonで動かないMobを作る方法(その１)</title>
+      <link>https://minecraftex.info/command-room/summon-cant-move-mob/</link>
+      <pubDate>Tue, 25 Dec 2018 19:04:37 +0000</pubDate>
+      
+      <guid>https://minecraftex.info/command-room/summon-cant-move-mob/</guid>
+      <description> 動かないモブを作るコマンド(その１) Copy&amp;nbsp; /summon minecraft:creeper ~ ~ ~ {NoAI:1}   NBTでNoAI:1を指定するだけです。
+minecraft:creeperの部分を minecraft:chiken のように他のIDに変えるだけでいろんなモブを作り出すことができます。
+ 建築のインテリアとして
+ MOD開発テストの攻撃用ターゲットとして
+  いろいろ使えて便利です。
+通常のモブと違う点  攻撃をしてこない。
+ こちらが攻撃してもノックバックしない。
+ 重力も無効なので、落下しない。
+ 128ブロック以上離れても、デスポーンしない。
+  重力無効は、不具合として修正されたという噂も聞きましたが、確認したところまだ無効でした。 </description>
+    </item>
+    
+  </channel>
+</rss>
